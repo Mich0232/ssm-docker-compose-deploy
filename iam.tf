@@ -1,8 +1,8 @@
 resource "aws_sns_topic" "main" {
-  name = local.name
+  name = "${local.name}-notifications"
 
   tags = merge(local.common_tags, {
-    Name      = "Deployment Notifications"
+    Name = "Docker Compose Deployment Notifications"
   })
 }
 

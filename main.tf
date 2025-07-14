@@ -31,7 +31,7 @@ locals {
   step_parameters = {
     for key, value in var.docker_compose_env_variables : key => "{{ ${key} }}"
   }
-  inline_env_variables = join("\n", [ for k in keys(local.input_parameters) : "${upper(k)}={{ ${k} }}"])
+  inline_env_variables = length(local.input_parameters) > 0 ? join("\n", [ for k in keys(local.input_parameters) : "${upper(k)}={{ ${k} }}"]) : "# No environment variables defined"
 }
 
 
