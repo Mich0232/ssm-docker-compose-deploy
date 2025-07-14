@@ -1,6 +1,13 @@
 # AWS SSM Docker Compose Deploy Module
 
-Deploy Docker Compose applications to EC2 instances using AWS Systems Manager with SNS notifications.
+Terraform module that creates SSM Automation RunBook to execute application deployment via Docker Compose commands.
+
+Run docker-compose command on EC2 instances, with provided environment variables via SSM Command. 
+```shell
+docker-compose pull
+docker-compose up -d
+```
+
 
 ## Features
 
