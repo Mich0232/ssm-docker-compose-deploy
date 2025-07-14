@@ -14,7 +14,7 @@ provider "aws" {
 }
 
 module "docker_compose_deploy" {
-  source = "../../"
+  source = "github.com/Mich0232/ssm-docker-compose-deploy.git"
 
   resource_prefix = "app-staging"
 
