@@ -2,7 +2,7 @@
 
 Terraform module that creates SSM Automation RunBook to execute application deployment via Docker Compose commands.
 
-![SSM Docker Compose Automation](.github/images/ssm-automation-horizontal.png)
+![SSM Docker Compose Automation](.github/images/ssm-automation-h-d.png)
 
 Run docker-compose command on EC2 instances, with provided environment variables via SSM Command. 
 ```shell
